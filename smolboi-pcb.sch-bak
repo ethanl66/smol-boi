@@ -1021,7 +1021,7 @@ U 1 1 66C3398C
 P 6450 4150
 F 0 "SW38" H 6450 4435 50  0000 C CNN
 F 1 "Win" H 6450 4344 50  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED" H 6450 4350 50  0001 C CNN
+F 2 "MX_Only:MXOnly-1.25U-NoLED" H 6450 4350 50  0001 C CNN
 F 3 "~" H 6450 4350 50  0001 C CNN
 	1    6450 4150
 	1    0    0    -1  
@@ -1046,7 +1046,7 @@ U 1 1 66C339A5
 P 7050 4150
 F 0 "SW39" H 7050 4435 50  0000 C CNN
 F 1 "Alt" H 7050 4344 50  0000 C CNN
-F 2 "MX_Only:MXOnly-1U-NoLED" H 7050 4350 50  0001 C CNN
+F 2 "MX_Only:MXOnly-1.25U-NoLED" H 7050 4350 50  0001 C CNN
 F 3 "~" H 7050 4350 50  0001 C CNN
 	1    7050 4150
 	1    0    0    -1  
@@ -1118,7 +1118,7 @@ U 1 1 66C33A04
 P 9450 4150
 F 0 "SW42" H 9450 4435 50  0000 C CNN
 F 1 "Space" H 9450 4344 50  0000 C CNN
-F 2 "MX_Only:MXOnly-3U-NoLED" H 9450 4350 50  0001 C CNN
+F 2 "MX_Only:MXOnly-2U-NoLED" H 9450 4350 50  0001 C CNN
 F 3 "~" H 9450 4350 50  0001 C CNN
 	1    9450 4150
 	1    0    0    -1  
@@ -1732,31 +1732,10 @@ Wire Wire Line
 Connection ~ 2800 7650
 Wire Wire Line
 	2700 7650 2800 7650
-Connection ~ 1450 4850
 Wire Wire Line
 	1450 4850 2200 4850
 Wire Wire Line
 	1450 4850 1450 4950
-Wire Wire Line
-	850  4850 1450 4850
-Wire Wire Line
-	1150 5250 1450 5250
-Connection ~ 1150 5250
-Wire Wire Line
-	1450 5250 1450 5150
-Wire Wire Line
-	850  5250 1150 5250
-$Comp
-L Switch:SW_Push SW47
-U 1 1 66A6691F
-P 850 5050
-F 0 "SW47" V 804 5198 50  0000 L CNN
-F 1 "SW_Push" V 895 5198 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_SKQG_WithStem" H 850 5250 50  0001 C CNN
-F 3 "~" H 850 5250 50  0001 C CNN
-	1    850  5050
-	0    1    1    0   
-$EndComp
 Text Notes 1500 8150 2    50   ~ 0
 Decoupling Capcitors
 Wire Notes Line
@@ -1839,12 +1818,12 @@ $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 66A16F0D
-P 1150 5250
-F 0 "#PWR02" H 1150 5000 50  0001 C CNN
-F 1 "GND" H 1155 5077 50  0000 C CNN
-F 2 "" H 1150 5250 50  0001 C CNN
-F 3 "" H 1150 5250 50  0001 C CNN
-	1    1150 5250
+P 1450 5150
+F 0 "#PWR02" H 1450 4900 50  0001 C CNN
+F 1 "GND" H 1455 4977 50  0000 C CNN
+F 2 "" H 1450 5150 50  0001 C CNN
+F 3 "" H 1450 5150 50  0001 C CNN
+	1    1450 5150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1990,37 +1969,33 @@ F 3 "~" H 950 8650 50  0001 C CNN
 	1    950  8650
 	1    0    0    -1  
 $EndComp
-Text GLabel 1450 6550 0    50   Input ~ 0
-col7
-Text GLabel 1450 6650 0    50   Input ~ 0
+Text GLabel 2200 7050 0    50   Input ~ 0
 col8
-Text GLabel 1450 6750 0    50   Input ~ 0
+Text GLabel 2200 6550 0    50   Input ~ 0
 col9
-Text GLabel 1450 6850 0    50   Input ~ 0
+Text GLabel 2200 6450 0    50   Input ~ 0
 col10
-Text GLabel 1450 6950 0    50   Input ~ 0
+Text GLabel 2200 6350 0    50   Input ~ 0
 col11
-Text GLabel 1450 7050 0    50   Input ~ 0
+Text GLabel 2200 6250 0    50   Input ~ 0
 row0
-Text GLabel 1450 5850 0    50   Input ~ 0
+Text GLabel 3500 6350 2    50   Input ~ 0
 col0
-Text GLabel 1450 5950 0    50   Input ~ 0
+Text GLabel 3500 6450 2    50   Input ~ 0
 col1
-Text GLabel 1450 6050 0    50   Input ~ 0
+Text GLabel 3500 6550 2    50   Input ~ 0
 col2
-Text GLabel 1450 6150 0    50   Input ~ 0
+Text GLabel 3500 6650 2    50   Input ~ 0
 col3
-Text GLabel 1450 6250 0    50   Input ~ 0
+Text GLabel 2200 5950 0    50   Input ~ 0
 col4
-Text GLabel 1450 6350 0    50   Input ~ 0
-col5
-Text GLabel 1450 6450 0    50   Input ~ 0
+Text GLabel 2200 6150 0    50   Input ~ 0
 col6
-Text GLabel 3600 6150 2    50   Input ~ 0
+Text GLabel 2200 6650 0    50   Input ~ 0
 row3
-Text GLabel 3600 6050 2    50   Input ~ 0
+Text GLabel 3500 7350 2    50   Input ~ 0
 row2
-Text GLabel 3600 5950 2    50   Input ~ 0
+Text GLabel 3500 7450 2    50   Input ~ 0
 row1
 Connection ~ 6350 7000
 Connection ~ 6400 6900
@@ -2072,11 +2047,15 @@ U 1 1 670EA034
 P 10050 4150
 F 0 "SW43" H 10050 4435 50  0000 C CNN
 F 1 "FRI" H 10050 4344 50  0000 C CNN
-F 2 "MX_Only:MXOnly-3U-NoLED" H 10050 4350 50  0001 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 10050 4350 50  0001 C CNN
 F 3 "~" H 10050 4350 50  0001 C CNN
 	1    10050 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9850 4450 11050 4450
+Text GLabel 2200 6950 0    50   Input ~ 0
+col7
+Text GLabel 2200 6050 0    50   Input ~ 0
+col5
 $EndSCHEMATC
