@@ -1,6 +1,8 @@
 # Smol boi
 
 Custom 40% Keyboard PCB design files designed with KiCad 5.1.4. 
+![Backside Render of PCB Containing MCU and circuit elements](https://github.com/ethanl66/smol-boi/blob/main/backside-render.png "Backside Render")
+![Front Render of PCB Containing circuit elements](https://github.com/ethanl66/smol-boi/blob/main/frontside-render.png "Frontside Render")
 
 ## Description
 
